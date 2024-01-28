@@ -6,6 +6,9 @@ export const visitors = {
     visitorToken: visitorsToken
 }
 
+export const contectorInfo = {
+    CONTECTOR_INFO :  BASE_URL + 'createContactorInfo',
+}
 
 export const recruiterInfo = {
     RECRUITER_INFO: BASE_URL + 'createRecruiterInfo'

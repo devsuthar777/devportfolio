@@ -14,7 +14,7 @@ const AboutSection = () => {
     justify-between items-center py-5`}>
         <div className='flex flex-col w-[80%] md:w-[60%] items-center mx-16 gap-2 mt-5 '>
             <div className='flex flex-col gap-3 justify-center items-center md:items-start'>
-            <h1 className='text-2xl text-center md:text-4xl md:text-left   ]'>Hello Everyone!</h1>
+            <h1 className='text-2xl text-center md:text-4xl md:text-left   '>Hello Everyone!</h1>
             <span className='text-5xl py-2 items-center w-[100%]  flex md:text-left flex-col md:flex-row  gap-2 h-[180px] md:h-auto '><span className='text-5xl md:text-4xl text-center '>I am</span>{"  "}
             <div className={`text-center flex items-center text-5xl md:text-4xl ${mode=='dark' ? 'text-blue-300' : 'text-richblack-50'}  `}>
             <TypeAnimation className=''
