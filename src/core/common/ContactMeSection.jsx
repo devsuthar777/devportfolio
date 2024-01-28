@@ -22,19 +22,19 @@ const ContactMeSection = () => {
     <div className='w-full mt-5'>
             <div>
                 <h2 className={`font-mono  ${mode=='light' ? 'text-richblack-800':'text-white'} font-bold text-5xl text-center`}>Contact Me</h2>
-                <p className={`mt-4 w-1/2 text-center mx-auto ${mode=='light' ? 'text-richblack-800':'text-white'} `}>I hope you enjoyed reviewing my work and exploring my digital portfolio. If you have any suggestions to enhance it further, feel free to share your thoughts.</p>
+                <p className={`mt-4 w-1/2 text-center mx-auto ${mode=='light' ? 'text-richblack-800':'text-richblack-50'} `}>I hope you enjoyed reviewing my work and exploring my digital portfolio. If you have any suggestions to enhance it further, feel free to share your thoughts.</p>
             </div>
             <form>
             <div className={`w-4/5 sm:w-2/5 h-auto  ${mode=='light' ? 'bg-richblack-600' : 'bg-[#3D0000]'} mx-auto scale-90 hover:scale-100 transition-all duration-200 mb-16 mt-5 text-richblack-25
             flex flex-col gap-y-5 rounded-2xl shadow-2xl shadow-black `}>
-            <div className={`w-9/12 h-[580px] ${mode=='light' ? 'bg-richblack-600' : 'bg-[#3D0000]'} mx-auto mb-16  text-richblack-25
+            <div className={`w-9/12 h-[580px] ${mode=='light' ? 'bg-richblack-600 text-richblack-25' : 'bg-[#3D0000] text-richblack-100'} mx-auto mb-16  
             flex flex-col  `}>
                 <div className='flex flex-col w-full mt-2'>
                     <label for="firstName" className='text-xl py-2 '>First Name</label>
                     <input  name="firstName" 
                     value={formData.firstName}
                     onChange={changeHandler}
-                    className='text-black p-2 rounded-md'></input>
+                    className='text-black p-2 rounded-md '></input>
                 </div>
                 <div className='flex flex-col w-full'>
                     <label  for="lastName" className='text-xl py-2'>Last Name</label>
@@ -48,7 +48,7 @@ const ContactMeSection = () => {
                     <input  name="email"
                      value={formData.email}
                      onChange={changeHandler}
-                     className='text-black p-2 rounded-md'></input>
+                     className='text-black p-2 rounded-md '></input>
                 </div>
                 <div className='flex flex-col h-[300px] '>
                     <label for="suggestion" className='text-xl py-2'>Comments</label>

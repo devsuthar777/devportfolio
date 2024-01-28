@@ -13,7 +13,7 @@ const ProjectSection = () => {
     <div id='Projects' className=''>
         <div>
         <h1 className={`font-mono pt-5 md:pt-1 ${mode=='light' ? 'text-richblack-800' : 'text-white'} font-bold text-5xl text-center`}>Projects</h1>
-        <p className={`mt-4 w-1/2  text-center mx-auto ${mode=='light' ? 'text-richblack-800' : 'text-white'}`}>Acquired one and a half years of experience building and learning new web skills, applying them to create various projects. Feel free to explore and share your thoughts</p>
+        <p className={`mt-4 w-1/2  text-center mx-auto ${mode=='light' ? 'text-richblack-800' : 'text-richblack-50'}`}>Acquired one and a half years of experience building and learning new web skills, applying them to create various projects. Feel free to explore and share your thoughts</p>
         </div>
         <div className='w-full md:w-10/12 mx-auto flex flex-col relative gap-y-14 mt-10 py-6 '>
           {
