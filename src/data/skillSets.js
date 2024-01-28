@@ -3,7 +3,7 @@ import jsLogo from "../core/assests/stack/Javascript.svg"
 import sqlLogo from '../core/assests/stack/sql-logo.png'
 import cssLogo from '../core/assests/stack/CSS.png'
 import htmlLogo from '../core/assests/stack/HTML.png'
-import javaLogo from '../core/assests/stack/Bash.svg'
+import javaLogo from '../core/assests/stack/java.png'
 import jQueryLogo from '../core/assests/stack/jquery.svg'
 import tailwindLogo from '../core/assests/stack/Tailwind.png'
 import reactLogo from '../core/assests/stack/React.png'
@@ -12,6 +12,8 @@ import expressLogo from '../core/assests/stack/Express.png'
 import reduxLogo from '../core/assests/stack/Redux.svg'
 import gitLogo from '../core/assests/stack/Git.svg'
 import postmanLogo from '../core/assests/stack/postman.svg'
+import MongoDB from '../core/assests/stack/MongoDB.svg'
+
 export  const skillsDetails = [{
     "langauges":
       [
@@ -66,6 +68,10 @@ export  const skillsDetails = [{
         {
           skillName: 'Redux',
           skillLogo: reduxLogo
+        },
+        {
+          skillName: 'MongoDB',
+          skillLogo: MongoDB
         },
     ],
 

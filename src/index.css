@@ -44,9 +44,18 @@ code {
   background: linear-gradient(0deg,  rgb(204 76 76 / var(--tw-bg-opacity)),rgba(204, 76, 76, 0))
 }
 
-.companiesList{
-  animation:10s infinite linear moveCompany;
+.ListLangauges{
+  animation:10s infinite linear moveListLangauges;
 }
+
+.ListTools{
+  animation:7s infinite linear moveListTools;
+}
+
+.ListFrameworks{
+  animation:10s infinite linear moveListFrameworks;
+}
+
 
 .loader {
   transform: rotateZ(45deg);
@@ -122,7 +131,34 @@ code {
 }
 
 
-@keyframes moveCompany {
+@keyframes moveListTools {
+  0%{
+    top:30%;
+  }
+  50%{
+    top:-10%;
+  }
+
+  100%{
+    top: 30%;
+  }
+}
+
+@keyframes moveListFrameworks {
+
+  0%{
+    top:0;
+  }
+  50%{
+    top:-65%;
+  }
+
+  100%{
+    top: 0;
+  }
+}
+
+@keyframes  moveListLangauges {
   0%{
     top:0;
   }

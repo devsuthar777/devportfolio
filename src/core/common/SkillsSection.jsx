@@ -15,7 +15,7 @@ const SkillsSection = () => {
                 skillTableElement.map((tableSet) => (
                     <div className={`flex flex-col  w-4/5  sm:w-1/3 h-[400px] shadow-md shadow-black hover:shadow-2xl hover:shadow-black group hover:scale-110 transition-all duration-200 ${mode=='light' ? 'bg-richblack-600' : 'bg-[#950101]'}  text-richblack-25 rounded-xl relative overflow-hidden `}>
                           <h2 className={`text-center py-3 ${mode=='light' ? 'gradientEffect' : 'gradientEffect-dark'} text-blue-5 font-bold rounded-t-xl absolute w-full z-20`} >{tableSet}</h2>
-                          <div className='overflow-hidden absolute companiesList w-full '>
+                          <div className={`overflow-hidden absolute ${tableSet==='FrameWorks' ? 'ListFrameworks' : (tableSet==='Tools' ? 'ListTools' : 'ListLangauges')} w-full `}>
                             <SkillVertiCalSlider skillElement={tableSet.toLowerCase()} skillsData={skillsDetails} />
                           </div>
                           <div className={`py-5  ${mode=='light' ? 'gradientEffectOppo' : 'gradientEffectOppo-dark'} rounded-b-xl w-full absolute bottom-0 z-20`} ></div>

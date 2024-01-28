@@ -23,7 +23,7 @@ const SkillVertiCalSlider = ({skillsData,skillElement}) => {
   if(nestedData==undefined) return (<div></div>)
   return (
     <div className='w-full relative overflow-hidden  transition-all duration-200 '>
-    <div className=' transition-all duration-200'>
+    <div className=' transition-all duration-200 mt-7'>
     {
       nestedData.map((currData, index) => (
         <div className='flex flex-row items-center justify-around mx-auto py-5 h-auto '>
