@@ -8,8 +8,8 @@ const SkillsSection = () => {
     const {mode} = useContext(AppContext);
   return (
     <div id="Skills" className='w-10/12 flex flex-col items-center justify-center'>
-        <h1 className={`font-mono  ${mode=='light' ? 'text-richblack-800' : 'text-white'} font-bold text-5xl`}>My Skills</h1>
-        <p className={`mt-4 w-[80%] md:w-[50%] text-center ${mode=='light' ? 'text-richblack-800' : 'text-white'} `}>I have descent knowledge and experience with the mentioned programming langauges, frameworks and tools mentioned below.</p>
+        <h1 className={`font-mono  ${mode=='light' ? 'text-richblack-800' : 'text-white'} font-bold text-5xl`}>Skills</h1>
+        <p className={`mt-4 w-[80%] md:w-[50%] text-center ${mode=='light' ? 'text-richblack-800' : 'text-white'} `}>I possess decent knowledge and experience with the following programming languages, frameworks, and tools:</p>
         <div className='flex flex-col md:flex-row w-full items-center justify-around mt-3 py-6 gap-x-7 gap-y-10'>
             {
                 skillTableElement.map((tableSet) => (

@@ -16,7 +16,7 @@ import postmanLogo from '../core/assests/stack/postman.svg'
 export const projectDetails= [
     {
         "ProjectTitle" : "Portfolio WebSite",
-        "projectDesc" : "It's interactive user friendly and fascinating digital portfolio website for dispalying my skills and projects.",
+        "projectDesc" : "It's an interactive, user-friendly, and fascinating digital portfolio website for displaying my skills and projects.",
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
         "path":"/project",
         "projectImg": porfolio
