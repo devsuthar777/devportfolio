@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import devLogo from '../assests/png/logo-no-background.png'
 import {NavbarLinks} from '../../data/NavBarElementsLinks'
 import {profileDropLogo} from '../../data/profileDropDown'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { CiLight } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { CiDark } from "react-icons/ci";
@@ -13,10 +13,28 @@ import { FiAlignJustify } from "react-icons/fi";
 
 const Navbar = () => {
 
+    const navigate = useNavigate();
     const {dropdown,setDrop} = useViewMode();
     const {mode,setMode} = useContext(AppContext);
     console.log("=========",mode,dropdown);
+    const location = useLocation();
+    const currentPath = location.pathname;
+    console.log("currentPath",currentPath);
+    function clickAnchorHandler(event)
+    {
+        if(currentPath!='/')
+        {
+            event.preventDefault();
+            navigate('/');
+            console.log(event.target.innerHTML);
+            setTimeout(() => {
+            const targetSection = document.getElementById(event.target.innerHTML);
+            targetSection.scrollIntoView({behavior: 'smooth'});
+            
+            },200);
+        }
 
+    }
     
 
   return (
@@ -38,7 +56,7 @@ const Navbar = () => {
                                 <li key={index} className={`hover:border-b-2 cursor-pointer text-sm ${mode=='light' ? 'text-white' : 'text-black'} ${mode=='light' ? 'md:text-black' : 'md:text-white'}   md:text-xl transition-all duration-100 px-2 `}>{
                                     (link.title === "Home" || link.title === "Know Me More" ) 
                                     ? <NavLink to={link.path}>{link.title}</NavLink> 
-                                    : <a className='' href={"#"+link.title}>{link.title}</a>
+                                    : <a className='' onClick={clickAnchorHandler} href={"#"+link.title}>{link.title}</a>
                                 }
                                 
                                 </li>
