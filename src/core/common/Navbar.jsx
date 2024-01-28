@@ -20,11 +20,12 @@ const Navbar = () => {
     
 
   return (
-    <div className={`flex items-center h-16  py-10 border-b-[1px] bg-opacity-90  ${mode=='light' ? 'border-black' : 'border-white'} `}>
+    <div className={`flex items-center h-16 fixed w-full z-40  py-8 border-b-[1px]  bg-opacity-75
+    ${mode=='light' ? 'border-black bg-[#81C1E1]' : 'border-white bg-black'} `}>
         <div className='w-10/12 flex flex-row mx-auto  '>
             <nav className='flex flex-row w-full items-center justify-between '>
                 <div className='w-auto h-auto px-3'>
-                    <img src={devLogo} alt="Logo" width={60} height={50} loading="lazy"/>
+                    <img src={devLogo} alt="Logo" width={40} height={50} loading="lazy"/>
                 </div>
 
                 <div className='flex flex-col md:flex-row items-center ml-2 mt-24 md:mt-0 group '>
@@ -56,7 +57,7 @@ const Navbar = () => {
                             className='rounded-full hidden md:block'
                         />
 
-                    <div className='mt-16 relative flex flex-col items-center '>
+                    <div className='mt-[72px] relative flex flex-col items-center '>
                          <div className={`flex flex-col items-center border ${mode=='light' ? 'border-black' : 'border-white'} hover:shadow-md 
                          w-[40px]
                          cursor-pointer group rounded-md gap-0 px-1  transition-all duration-300`}>

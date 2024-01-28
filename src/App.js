@@ -59,7 +59,7 @@ function App() {
    
   return (
     <div className={`w-full min-h-screen ${mode==='light' ? 'bg-[#81C1E1]' : 'bg-black'}   overflow-hidden flex flex-col font-inter`}>
-      <Navbar />
+      <Navbar  />
       <Routes>
          <Route path="/" element ={<HomePage/>} />
          <Route path="/knowMeMore" element ={<KnowMeMorePage/>} />

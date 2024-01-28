@@ -22,7 +22,7 @@ const ContactMeSection = () => {
     <div className='w-full mt-5'>
             <div>
                 <h2 className={`font-mono  ${mode=='light' ? 'text-richblack-800':'text-white'} font-bold text-5xl text-center`}>Contact Me</h2>
-                <p className={`mt-4 w-1/2 text-center mx-auto ${mode=='light' ? 'text-richblack-800':'text-richblack-50'} `}>I hope you enjoyed reviewing my work and exploring my digital portfolio. If you have any suggestions to enhance it further, feel free to share your thoughts.</p>
+                <p className={`mt-4 w-5/6 md:w-1/2 text-center mx-auto ${mode=='light' ? 'text-richblack-800':'text-richblack-50'} `}>I hope you enjoyed reviewing my work and exploring my digital portfolio. If you have any suggestions to enhance it further, feel free to share your thoughts.</p>
             </div>
             <form>
             <div className={`w-4/5 sm:w-2/5 h-auto  ${mode=='light' ? 'bg-richblack-600' : 'bg-[#3D0000]'} mx-auto scale-90 hover:scale-100 transition-all duration-200 mb-16 mt-5 text-richblack-25

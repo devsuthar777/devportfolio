@@ -39,7 +39,7 @@ const HireMePage = () => {
 
   return (
     
-    <div className='w-full flex justify-center items-center relative min-h-screen'>
+    <div className='w-full flex justify-center items-center relative min-h-screen mt-14'>
      {
       loaderFlag ? (<span className="loader absolute top-[40%]"></span>) : (
     
@@ -55,26 +55,26 @@ const HireMePage = () => {
       <div className={`w-full mx-auto  flex  relative flex-col justify-center items-center gap-5  rounded-xl z-[10] ${mode=='light' ? 'text-black' :'text-richblack-50'} `}>
       <div className='w-4/5 flex flex-col md:flex-row justify-between gap-1 md:gap-0 mt-8'>
           <label className='text-xl text-nowrap font-semibold '>First Name</label>
-          <input name='recNameFirst' className='rounded-md w-full md:w-[66%] px-1' onChange={changeHandlerRec}></input>
+          <input name='recNameFirst' className='rounded-md w-full md:w-[66%] px-1 text-black' onChange={changeHandlerRec}></input>
         </div>
 
         <div className='w-4/5 flex flex-col md:flex-row justify-between  gap-1 md:gap-0'>
           <label className='text-xl text-nowrap font-semibold'>Last Name</label>
-          <input name='recNamelast' className='rounded-md w-full md:w-[66%]  px-1' onChange={changeHandlerRec} ></input>
+          <input name='recNamelast' className='rounded-md w-full md:w-[66%]  px-1 text-black' onChange={changeHandlerRec} ></input>
         </div>
 
         <div className='w-4/5 flex flex-col md:flex-row justify-between gap-1 md:gap-0 '>
           <label className='text-xl text-nowrap font-semibold'>Email Address</label>
-          <input name='recEmail' className='rounded-md w-full md:w-[66%] px-1 ' onChange={changeHandlerRec} ></input>
+          <input name='recEmail' className='rounded-md w-full md:w-[66%] px-1 text-black' onChange={changeHandlerRec} ></input>
         </div>
 
         <div className='w-4/5 flex flex-col md:flex-row justify-between gap-1 md:gap-0'>
           <label className='text-xl text-nowrap font-semibold'>Company Name</label>
-          <input name='recCompName' className='rounded-md w-full md:w-[66%] px-1' onChange={changeHandlerRec}  ></input>
+          <input name='recCompName' className='rounded-md w-full md:w-[66%] px-1 text-black' onChange={changeHandlerRec}  ></input>
         </div>
         <div className='w-4/5 flex flex-col justify-between gap-2'>
           <label className='text-xl font-semibold'>Comments</label>
-          <textarea name='recComments' className='rounded-md px-2 py-2' onChange={changeHandlerRec}  rows="10" cols="50"></textarea>
+          <textarea name='recComments' className='rounded-md px-2 py-2 text-black' onChange={changeHandlerRec}  rows="10" cols="50"></textarea>
         </div>
         <div className='flex items-center border py-2 text-2xl px-20 bg-black text-white rounded-lg outline-none cursor-pointer 
         mb-5 '><button type='submit' >Submit</button></div>

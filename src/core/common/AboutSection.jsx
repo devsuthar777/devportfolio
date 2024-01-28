@@ -37,7 +37,7 @@ const AboutSection = () => {
             
             </span>
             <p className={`text-center md:text-left ${mode=='light' ? 'text-richblack-800' : 'text-richblack-50'} `}>Coding started as a hobby, and now I'm stepping into web development. Check out my work and share your thoughts. Let's build something awesome!</p>
-            <p className='text-center md:text-left'>Seeking MERN Full-Stack Developer job. Ready to contribute and connect</p>
+            <p className='text-center md:text-left font-bold'>Seeking MERN Full-Stack Developer job. Ready to contribute and connect</p>
             <NavigateButton buttonText={"Hire Me"} path={"/hireMe"} />
             </div>
         </div>
