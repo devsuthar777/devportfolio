@@ -1,4 +1,6 @@
 import porfolio from '../../src/core/assests/project/portfolioLogo.png'
+import devTute from '../../src/core/assests/project/devtute.png'
+import prorFolioLogoDark from '../../src/core/assests/project/portFolioLogoDark.png'
 import clogo from "../core/assests/stack/c-logo.png";
 import jsLogo from "../core/assests/stack/Javascript.svg"
 import sqlLogo from '../core/assests/stack/sql-logo.png'
@@ -13,19 +15,20 @@ import expressLogo from '../core/assests/stack/Express.png'
 import reduxLogo from '../core/assests/stack/Redux.svg'
 import gitLogo from '../core/assests/stack/Git.svg'
 import postmanLogo from '../core/assests/stack/postman.svg' 
+import MongoDB from '../core/assests/stack/MongoDB.svg'
 export const projectDetails= [
     {
         "ProjectTitle" : "Portfolio WebSite",
         "projectDesc" : "It's an interactive, user-friendly, and fascinating digital portfolio website for displaying my skills and projects.",
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
         "path":"/project",
-        "projectImg": porfolio
+        "projectImg": prorFolioLogoDark
     },
     {
-        "ProjectTitle" : "Portfolio WebSite",
-        "projectDesc" : "It's interactive user friendly and fascinating digital portfolio website for dispalying my skills and projects.",
-        "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
+        "ProjectTitle" : "DevTute",
+        "projectDesc" : "DevTute is a fully functional EdTech platform that enables online Learners and Tutors to create, consume, and rate educational content.",
+        "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":expressLogo},{"logo":tailwindLogo},{"logo":MongoDB}],
         "path":"/project",
-        "projectImg": porfolio
+        "projectImg": devTute
     }
 ]

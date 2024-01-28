@@ -25,16 +25,16 @@ const ProjectSection = () => {
                         className='h-full w-full rounded-2xl' 
                         src={currProject.projectImg}></img></div>
                     
-                           <div className={`w-3/5  flex-col h-4/5 mt-10 ml-20 sm:ml-32 mx-auto absolute hover:scale-110 
+                           <div className={`w-4/5 md:w-3/5  flex-col h-4/5 mt-10 ml-10 sm:ml-32 mx-auto absolute hover:scale-110 
                            group group-hover:flex hidden 
                            transition-all duration-200 justify-center  gap-y-5  z-[10]`}>
                             <h2 className={`text-3xl font-extrabold group-hover:drop-shadow-sm text-white`}>{currProject.ProjectTitle}</h2>
                             <p className='font-semibold text-white'>{currProject.projectDesc}</p>
                         
-                             <ul className='flex gap-x-5'>
+                             <ul className='flex gap-x-2 md:gap-x-5'>
                                 {
                                 currProject.projectTechLogos.map((currLogo) => (
-                                    <li className='rounded-full bg-white w-12 h-12 flex justify-center items-center'><img alt={"techLogo"} loading='lazy' width={30} height={30} 
+                                    <li className='rounded-full bg-white w-10 h-10 md:w-12 md:h-12 flex justify-center items-center'><img alt={"techLogo"} loading='lazy' width={30} height={30} 
                                         src={currLogo.logo}
                                     /></li>
                                 ))   
