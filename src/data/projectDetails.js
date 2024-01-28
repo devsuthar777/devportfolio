@@ -21,14 +21,14 @@ export const projectDetails= [
         "ProjectTitle" : "Portfolio WebSite",
         "projectDesc" : "It's an interactive, user-friendly, and fascinating digital portfolio website for displaying my skills and projects.",
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
-        "path":"/project",
+        "path":"/portfolioweb",
         "projectImg": prorFolioLogoDark
     },
     {
         "ProjectTitle" : "DevTute",
         "projectDesc" : "DevTute is a fully functional EdTech platform that enables online Learners and Tutors to create, consume, and rate educational content.",
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":expressLogo},{"logo":tailwindLogo},{"logo":MongoDB}],
-        "path":"/project",
+        "path":"/devTute",
         "projectImg": devTute
     }
 ]

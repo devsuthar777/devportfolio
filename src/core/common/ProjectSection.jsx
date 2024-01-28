@@ -40,7 +40,7 @@ const ProjectSection = () => {
                                 ))   
                                 }   
                                 </ul>
-                            <NavigateButton buttonText={"View"}  />
+                            <NavigateButton buttonText={"View"}  path={currProject.path} btnType={'button'} />
                         </div>
                     </div>
                     
