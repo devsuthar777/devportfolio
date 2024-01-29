@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import devLogo from '../assests/png/logo-no-background.png'
+import devLogoDark from '../assests/png/logo-no-background.png'
+import devLogoLight from '../assests/png/logo-black.png'
 import {NavbarLinks} from '../../data/NavBarElementsLinks'
 import {profileDropLogo} from '../../data/profileDropDown'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
@@ -42,8 +43,12 @@ const Navbar = () => {
     ${mode=='light' ? 'border-black bg-[#81C1E1]' : 'border-white bg-black'} `}>
         <div className='w-10/12 flex flex-row mx-auto  '>
             <nav className='flex flex-row w-full items-center justify-between '>
-                <div className='w-auto h-auto px-3'>
-                    <img src={devLogo} alt="Logo" width={40} height={50} loading="lazy"/>
+                <div className='w-auto h-auto px-3 hover:cursor-pointer'>
+                    <NavLink to={'/'}>
+                    {
+                     <img src={devLogoDark} alt="Logo"  width={40} height={50} loading="lazy"/> 
+                    }
+                    </NavLink>
                 </div>
 
                 <div className='flex flex-col md:flex-row items-center ml-2 mt-24 md:mt-0 group '>
