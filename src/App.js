@@ -15,6 +15,7 @@ import { useContext, useEffect } from 'react';
 import { AppContext } from './context/AppContext';
 import { apiConnector } from './services/apiConnector';
 import {visitors} from './services/apis'
+import ProjectsPage from './core/pages/ProjectsPage';
 
 //const visitorToken = process.env.VISITOR_VALID
 
@@ -65,6 +66,9 @@ function App() {
          <Route path="/knowMeMore" element ={<KnowMeMorePage/>} />
          <Route path="/hireMe" element ={<HireMePage/>} />
          <Route path="*" element ={<DevOr404Page/>} />
+         <Route path="/projects/:projectName" element={<ProjectsPage/>}>
+
+         </Route>
       </Routes>
       
      

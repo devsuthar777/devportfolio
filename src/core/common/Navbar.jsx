@@ -39,10 +39,10 @@ const Navbar = () => {
     
 
   return (
-    <div className={`flex items-center h-16 fixed w-full z-40  py-8 border-b-[1px]  bg-opacity-75
+    <div className={`flex items-center h-16 fixed w-full z-40   py-8 border-b-[1px]  bg-opacity-75
     ${mode=='light' ? 'border-black bg-[#81C1E1]' : 'border-white bg-black'} `}>
         <div className='w-10/12 flex flex-row mx-auto  '>
-            <nav className='flex flex-row w-full items-center justify-between '>
+            <nav className='flex flex-row w-full items-center h-16  justify-between '>
                 <div className='w-auto h-auto px-3 hover:cursor-pointer'>
                     <NavLink to={'/'}>
                     {
