@@ -29,7 +29,10 @@ code {
   background: linear-gradient(180deg, rgb(66 72 84 / var(--tw-bg-opacity)), #fff0)
 }
 
-
+.gradientEffectProject
+{
+  background: linear-gradient(0deg,  rgb(66 72 84 / var(--tw-bg-opacity)), rgba(204, 76, 76, 0))
+}
 
 .gradientEffectOppo
 {
@@ -50,6 +53,11 @@ code {
 
 .ListLangauges{
   animation:10s infinite linear moveListLangauges;
+}
+
+.titleSlideEffect
+{
+  animation: 1s 1 linear moveTitle;
 }
 
 .ListTools{
@@ -158,6 +166,16 @@ code {
 
   100%{
     top: 30%;
+  }
+}
+
+@keyframes moveTitle {
+  0%{
+    bottom:-20%;
+  }
+ 
+  100%{
+    bottom: 0%;
   }
 }
 

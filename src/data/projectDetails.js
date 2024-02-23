@@ -23,7 +23,11 @@ export const projectDetails= [
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
         "path":"/projects/:portfolioWebsite",
         "projectImg": prorFolioLogoDark,
-        "projectName" : 'portfolioWebsite'
+        "projectName" : 'portfolioWebsite',
+        "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, NodeJs, Context API, MongoDB',
+        "ProjectBriefDesc": [{'point':' Built a web application for my digital portfolio, describing myself. The portfolio is responsive and interactive, developed using ReactJs and Context API.'}, 
+        {'point':'Implemented Back-end with NodeJs and Integreted with Restful APIs to extracted the review’s and suggestions from online visitors.'},
+        {'point':'It has two type view modes that are light and dark.'}]
     },
     {
         "ProjectTitle" : "DevTute",
@@ -31,6 +35,12 @@ export const projectDetails= [
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":expressLogo},{"logo":tailwindLogo},{"logo":MongoDB}],
         "path":"/projects/:devTute",
         "projectImg": devTute,
-        "projectName" : 'devTute'
+        "projectName" : 'devTute',
+        "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, NodeJs, Redux, MongoDB, JSON Web Tokens',
+        "ProjectBriefDesc": [{'point':'DevTute is a fully functional EdTech platform that enables users to create, consume, and rate educational content.'},
+        {'point':'It’s built on the MERN tech stack which includes ReactJs, NodeJs, MongoDB and expressJs. And JavaScript to do mandatory front-end Validation.'},
+        {'point':'t’s integrated with the essential functionality of User validation on Login, SignUp, Authorisation, Authentication using JSON web tokens and OTP generation.'},
+        {'point':' It has been integrated with payment gateway functionality with Razorpay for buying the courses and enrolling learner’s to paid courses.'},
+        {'point':'Application is using RestApi for data retrieval and manipulation with Axios. These reliable API’s are built with the Restful principle for the future aspects of maintaining and scaling.'}]
     }
 ]
