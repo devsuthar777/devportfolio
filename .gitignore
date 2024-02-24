@@ -15,7 +15,7 @@
 .DS_Store
 .env
 .env.local
-/backEnd/.env
+backEnd/.env
 .env.development.local
 .env.test.local
 .env.production.local
