@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../../context/AppContext';
 import {createRecruiterInfo} from '../../services/operations/recruiter'
 const HireMePage = () => {
@@ -7,6 +7,13 @@ const HireMePage = () => {
   
   const [recFormData, setRecFormData] = useState({recNameFirst:'',recNamelast:'',recEmail:'',recCompName:'',recComments:''});
 
+  useEffect(() => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  },[]);
+
   const  submitHandler =  async(event) => {
     event.preventDefault();
 
@@ -14,7 +21,7 @@ const HireMePage = () => {
 
       if(recFormData[key].trim()==="") {alert("All fields are mandatory"); return false;};
 
-    });
+    }); 
 
     recFormData.visitorToken= token;
     console.log("final Submission",recFormData);

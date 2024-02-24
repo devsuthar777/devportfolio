@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import AboutSection from '../common/AboutSection'
 import SkillsSection from '../common/SkillsSection'
 import ProjectSection from '../common/ProjectSection'
@@ -7,6 +7,14 @@ import { AppContext } from '../../context/AppContext'
 
 const HomePage = () => {
   const {mode} = useContext(AppContext);
+  useEffect(()=> {
+    window.scrollTo(
+      {
+        top:0,
+        behavior:'smooth'
+      }
+    )
+  },[])
   return (
     <div className=''>
        <section className='flex justify-center my-10 rounded-sm mt-28'>

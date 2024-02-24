@@ -73,6 +73,11 @@ code {
   animation: 200ms  linear widthChange;
 }
 
+.divCutAnimationPhone {
+  width: 100%;
+  animation: 200ms  linear widthChangePhone;
+}
+
 @keyframes widthChange {
   0% {
     height: 0px;
