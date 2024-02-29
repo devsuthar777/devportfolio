@@ -40,7 +40,7 @@ export const projectDetails= [
         "ProjectBriefDesc": [{'point':'DevTute is a fully functional EdTech platform that enables users to create, consume, and rate educational content.'},
         {'point':'It’s built on the MERN tech stack which includes ReactJs, NodeJs, MongoDB and expressJs. And JavaScript to do mandatory front-end Validation.'},
         {'point':'It’s integrated with the essential functionality of User validation on Login, SignUp, Authorisation, Authentication using JSON web tokens and OTP generation.'},
-        {'point':' It has been integrated with payment gateway functionality with Razorpay for buying the courses and enrolling learner’s to paid courses.'},
+        {'point':'It has been integrated with payment gateway functionality with Razorpay for buying the courses and enrolling learner’s to paid courses.'},
         {'point':'Application is using RestApi for data retrieval and manipulation with Axios. These reliable API’s are built with the Restful principle for the future aspects of maintaining and scaling.'}]
     }
 ]
