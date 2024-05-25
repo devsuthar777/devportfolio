@@ -16,6 +16,7 @@ import { AppContext } from './context/AppContext';
 import { apiConnector } from './services/apiConnector';
 import {visitors} from './services/apis'
 import ProjectsPage from './core/pages/ProjectsPage';
+import Footer from './core/common/Footer';
 
 //const visitorToken = process.env.VISITOR_VALID
 
@@ -86,7 +87,7 @@ function App() {
 
          </Route>
       </Routes>
-      
+      <Footer/>
      
     </div>
   );
