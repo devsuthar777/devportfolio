@@ -29,7 +29,7 @@ function App() {
        if(!token) {
         console.log(visitors.VISITOR_API,visitors.visitorToken);
 
-        const result = await apiConnector("POST",visitors.VISITOR_API);
+        const result = await apiConnector("POST",visitors.VISITOR_API,{guesttLocalDate:calculateDate()});
         console.log("Printing token result",result);
         if(result.data.success) updateToken(result.data.visitorToken);
         else alert(result.data.message);
@@ -57,6 +57,22 @@ function App() {
 
   },[]);
 
+ const calculateDate = () => {
+    let currentDate = new Date();
+
+    let year = currentDate.getFullYear();
+    let month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+    let day = currentDate.getDate().toString().padStart(2, '0');
+
+    let hours = currentDate.getHours().toString().padStart(2, '0');
+    let minutes = currentDate.getMinutes().toString().padStart(2, '0');
+    let seconds = currentDate.getSeconds().toString().padStart(2, '0');
+
+    let formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    console.log(formattedDate);
+    return formattedDate;
+  }
+   
    
   return (
     <div className={`w-full min-h-screen ${mode==='light' ? 'bg-[#81C1E1]' : 'bg-black'}   overflow-hidden flex flex-col font-inter`}>

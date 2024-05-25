@@ -25,6 +25,9 @@ const visitorTokenSchema =  new mongoose.Schema(
             type: mongoose.Schema.Types.ObjectId,
             ref:'visitorInfo',
             default: null
+        },
+        visitLocalDate:{
+            type: String,
         }
     }
 )
