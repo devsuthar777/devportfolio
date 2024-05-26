@@ -1,6 +1,7 @@
 import porfolio from '../../src/core/assests/project/portfolioLogo.png'
 import devTute from '../../src/core/assests/project/devtute.png'
 import prorFolioLogoDark from '../../src/core/assests/project/portFolioLogoDark.png'
+import formbuilderPage from '../../src/core/assests/project/forbuilderPage.png'
 import clogo from "../core/assests/stack/c-logo.png";
 import jsLogo from "../core/assests/stack/Javascript.svg"
 import sqlLogo from '../core/assests/stack/sql-logo.png'
@@ -23,11 +24,26 @@ export const projectDetails= [
         "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":cssLogo},{"logo":tailwindLogo}],
         "path":"/projects/:portfolioWebsite",
         "projectImg": prorFolioLogoDark,
+        "type":"img",
         "projectName" : 'portfolioWebsite',
         "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, NodeJs, Context API, MongoDB',
         "ProjectBriefDesc": [{'point':' Built a web application for my digital portfolio, describing myself. The portfolio is responsive and interactive, developed using ReactJs and Context API.'}, 
         {'point':'Implemented Back-end with NodeJs and Integreted with Restful APIs to extracted the review’s and suggestions from online visitors.'},
         {'point':'It has two type view modes that are light and dark.'}]
+    },
+    {
+        "ProjectTitle" : "Form-Builder",
+        "projectDesc" : "Inspired by google forms, Tried replicate the same features where you can create dynamic forms and share with others",
+        "projectTechLogos":[{"logo":reactLogo},{"logo":nodeLogo},{"logo":MongoDB},{"logo":tailwindLogo}],
+        "path":"/projects/:formBuilder",
+        "projectImg": formbuilderPage,
+        "type":"iframe",
+        "src": "https://form-builder-sbmm.vercel.app/",
+        "projectName" : 'formBuilder',
+        "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, NodeJs, Redux, MongoDB, JWT, Social Login pachage',
+        "ProjectBriefDesc": [{'point':' Developed FormBuilder, a dynamic form creation tool akin to Google Forms, enabling users to easily create, share, and view forms with dynamic features for enhanced engagement and responsiveness.'}, 
+        {'point':'Integrated Google social login and JSON Web Tokens for secure user authentication and authorization within FormBuilder, ensuring a seamless and protected user experience.'},
+        ]
     },
     {
         "ProjectTitle" : "DevTute",
@@ -36,6 +52,7 @@ export const projectDetails= [
         "path":"/projects/:devTute",
         "projectImg": devTute,
         "projectName" : 'devTute',
+        "type":"img",
         "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, NodeJs, Redux, MongoDB, JSON Web Tokens',
         "ProjectBriefDesc": [{'point':'DevTute is a fully functional EdTech platform that enables users to create, consume, and rate educational content.'},
         {'point':'It’s built on the MERN tech stack which includes ReactJs, NodeJs, MongoDB and expressJs. And JavaScript to do mandatory front-end Validation.'},

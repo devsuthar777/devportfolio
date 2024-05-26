@@ -16,28 +16,52 @@ const ProjectsPage = () => {
         return project.projectName === currProjectName;
     })
 
+    const mouseEnterHanlder = () =>
+        {
+            console.log("onMouseEnter");
+            const element = myRef.current;
+            element.classList.add('hidden');  
+        }
+
     useEffect(() => {
         const element = myRef.current;
         element.classList.remove('titleSlideEffect');
         element.classList.add('titleSlideEffect');
         console.log('class removed and added');
         setTimeout(() =>{element.classList.remove('titleSlideEffect');},1100);
+        setTimeout(() =>{element.classList.remove('titleSlideEffect');},1100);
+        
     },[currProject])
+    
     
 
 
   return (
     <div className='mt-16  transition-all duration-200'>     
-        <div className='w-full flex md:flex-row  flex-col-reverse'>
+        <div className='w-full flex md:flex-row  h-full flex-col-reverse'>
             {/* side bar for big screen */}
             <div className={`md:block hidden ${mode == 'dark' ? 'md:w-[15%] w-full md:border-r border-white md:fixed' : 'md:w-[15%] w-full border-r md:fixed'}`}> <ProjectSideBar /></div>
             {/* side bar for big screen */}
             <div className=' h-full w-full md:w-[85%]  md:ml-[15%] mt-8 '>
-                <div className='w-[90%] mx-auto border border-blue-100 rounded-lg'>
-                    <div className='w-full h-full relative flex overflow-hidden'>
-                        <img alt="projectImg" src={currProject[0].projectImg} lang='true' className='w-full h-full rounded-lg '></img>
-                        <p ref={myRef}  className={` text-3xl md:text-7xl text-white absolute bottom-0   w-full text-center gradientEffectProject  rounded-b-lg `}>{currProject[0].ProjectTitle}</p>
-                    </div>
+                <div className='w-[90%] mx-auto border h-full border-blue-100 rounded-lg'>
+                    <div className='w-full h-full relative flex overflow-hidden'  >
+                       {
+                        currProject[0].type == "img" ? 
+                        (
+                            <>
+                            <img alt="projectImg" src={currProject[0].projectImg} lang='true' className='w-full h-full rounded-lg '></img>
+                            <p ref={myRef}  className={` text-3xl md:text-7xl text-white absolute bottom-0   w-full text-center gradientEffectProject  rounded-b-lg `}>{currProject[0].ProjectTitle}</p>
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                            <iframe  onMouseEnter={mouseEnterHanlder} className='w-full h-[80vh]' src={currProject[0].src} title="W3Schools Free Online Web Tutorials"></iframe>
+                            <p ref={myRef} onClick={mouseEnterHanlder}  className={` text-3xl md:text-7xl text-white absolute bottom-0    w-full text-center gradientEffectProject  rounded-b-lg `}>{currProject[0].ProjectTitle}</p>
+                            </>
+                                                        
+                        )
+                       } </div>
                 </div>
 
                 {/* side bar for big screen */}
