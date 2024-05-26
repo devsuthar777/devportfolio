@@ -17,6 +17,7 @@ const HomePage = () => {
   },[])
   return (
     <div className=''>
+    
        <section className='flex justify-center my-10 rounded-sm mt-28'>
         <AboutSection/>
       </section>

@@ -28,6 +28,11 @@ const visitorTokenSchema =  new mongoose.Schema(
         },
         visitLocalDate:{
             type: String,
+        },
+        guestVisitName:
+        {
+            type:String,
+            default: null,
         }
     }
 )
