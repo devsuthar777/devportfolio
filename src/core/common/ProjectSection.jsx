@@ -18,7 +18,7 @@ const ProjectSection = () => {
         <div className='w-full md:w-10/12 mx-auto flex flex-col relative gap-y-14 mt-10 py-6 '>
           {
             projectDetails.map((currProject,index) => (
-                <div className={`w-9/12 h-[400px]  hover:scale-110 transition-all duration-200 group hover:bg-black hover:z-30 relative  shadow-xl  rounded-2xl  self-center ${!index%2 ? 'md:self-start':'md:self-end'} shadow-black `}>
+                <div className={`w-9/12 h-[400px]  hover:scale-110 transition-all duration-200 group hover:bg-black hover:z-30 relative  shadow-xl  rounded-2xl  self-center ${index%2 ? 'md:self-end':'md:self-start'} shadow-black `}>
                     <div className='w-full flex rounded-2xl  '>
                         <div className='w-full h-full absolute   opacity-100  group-hover:opacity-30'>
                         <img
