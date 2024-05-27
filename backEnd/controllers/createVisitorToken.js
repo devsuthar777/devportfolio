@@ -4,7 +4,7 @@ const visitorToken = require('../models/visitorToken');
 exports.createVisitorToken = async (req,res) => {
   try
   {
-        const {token,guesttLocalDate,guestVisitName} = req.body;
+        const {token,guestLocalDate,guestVisitName} = req.body;
 
         console.log("bodyData.......",req.body);
         var finalToken = "";
@@ -14,7 +14,7 @@ exports.createVisitorToken = async (req,res) => {
         }
         console.log("finalToken",finalToken);
         if(!finalToken){
-            const newToken = await visitorToken.create({visitLocalDate:guesttLocalDate,guestVisitName});
+            const newToken = await visitorToken.create({visitLocalDate:guestLocalDate,guestVisitName});
             console.log(newToken);
             
              res.status(200).json({
