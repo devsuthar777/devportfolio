@@ -39,6 +39,7 @@ function App() {
     console.log(event.target.name);    
     createVisitorToken(guestName,token,updateToken);
     toast.success("Welcome to My Portfolio");
+    updateToken("dummy");
 
   }
    
