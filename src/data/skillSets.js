@@ -13,6 +13,8 @@ import reduxLogo from '../core/assests/stack/Redux.svg'
 import gitLogo from '../core/assests/stack/Git.svg'
 import postmanLogo from '../core/assests/stack/postman.svg'
 import MongoDB from '../core/assests/stack/MongoDB.svg'
+import vsCode from '../core/assests/stack/vscode.svg'
+import reduxSaga from '../core/assests/stack/redux-saga.svg'
 
 export  const skillsDetails = [{
     "langauges":
@@ -70,9 +72,14 @@ export  const skillsDetails = [{
           skillLogo: reduxLogo
         },
         {
+          skillName: 'Redux-Saga',
+          skillLogo: reduxSaga
+        },
+        {
           skillName: 'MongoDB',
           skillLogo: MongoDB
         },
+
     ],
 
     "tools":
@@ -85,6 +92,12 @@ export  const skillsDetails = [{
         skillName: 'PostMan',
         skillLogo: postmanLogo
       },
+      {
+        skillName: 'VS Code',
+        skillLogo: vsCode
+
+      },
+     
     ]
   }
   ]
