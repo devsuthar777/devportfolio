@@ -1,5 +1,6 @@
 import porfolio from '../../src/core/assests/project/portfolioLogo.png'
 import devTute from '../../src/core/assests/project/devtute.png'
+import musicplayer from '../../src/core/assests/project/MusicPlayer.svg'
 import prorFolioLogoDark from '../../src/core/assests/project/portFolioLogoDark.png'
 import formbuilderPage from '../../src/core/assests/project/forbuilderPage.png'
 import clogo from "../core/assests/stack/c-logo.png";
@@ -60,5 +61,20 @@ export const projectDetails= [
         {'point':'It’s integrated with the essential functionality of User validation on Login, SignUp, Authorisation, Authentication using JSON web tokens and OTP generation.'},
         {'point':'It has been integrated with payment gateway functionality with Razorpay for buying the courses and enrolling learner’s to paid courses.'},
         {'point':'Application is using RestApi for data retrieval and manipulation with Axios. These reliable API’s are built with the Restful principle for the future aspects of maintaining and scaling.'}]
+    },
+    {
+        "ProjectTitle" : "Music Player",
+        "projectDesc" : "A fascinating music player UI which is responsive and cool. It helps you to navigate through the all the songs and artist to play the music you want. A great music search algorithm with debounce to find your favourite song. Controll the music through buttons and seeker.",
+        "projectTechLogos":[{"logo":reactLogo},{"logo":tailwindLogo},],
+        "path":"/projects/:musicplayer",
+        "projectImg": musicplayer,
+        "projectName" : 'musicplayer',
+        "type":"iframe",
+        "src": "https://music-player-ui-chi.vercel.app/",
+        "projectTechnologies" : 'HTML , CSS, TailWind CSS, JavaScript, ReactJs, Context-API',
+        "ProjectBriefDesc": [{'point':'Music player is replica of spotify'},
+        {'point':'The UI is built using reactJs along with the tailwind css for stayling and responsive which gives a really cool look and gives simmer UI effect while loading.'},
+        {'point':'It list all songs      and you can search any song using search bar and uses debounce algoritham for responsive searching!'},
+        ]
     }
 ]

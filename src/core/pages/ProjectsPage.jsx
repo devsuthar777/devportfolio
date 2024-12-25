@@ -70,7 +70,7 @@ const ProjectsPage = () => {
 
                 <div className='w-[80%]  mx-auto mt-10 flex flex-col gap-5 mb-4'>
                 <div className='flex flex-col gap-2'>
-                <p className={`text-2xl font-extrabold ${mode==='dark' ? 'text-white' : ''}`}>About</p>
+                <p className={`text-2xl font-extrabold ${mode==='dark' ? 'text-white' : ''}`}>{currProject[0].ProjectTitle}</p>
                 <p className={`${mode==='dark' ? 'text-white' : ''}`}>{currProject[0].projectDesc}</p> 
                 </div>
                 <div className='w-full bg-richblack-500 h-1 rounded-lg'></div>
